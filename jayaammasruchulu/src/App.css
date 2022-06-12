@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: "Varela Round", sans-serif;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+.LoginBox{
+  width: fit-content;
+  height:fit-content;
+  padding:10px;
+  border:0.5px solid rgba(0,0,0,0.2);
+  font-family:"Ubuntu",sans-serif;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+form{
+  margin-bottom: 20px;
+  padding:10px;
+}
+form > input{
+  border:1px solid rgba(0, 0, 0,0.2);
+  border-radius: 6px;
+  padding:10px;
+  margin:10px 10px 15px 10px;
+  width:400px;
+  height:30px;
+  font-family: "Varela Round",sans-serif;
+}
+form > input:focus{
+  outline : none !important;
+  border: 1px solid rgba(255, 162, 50, 1);
+}
+form > input::placeholder{
+  color:rgba(0, 0, 0,0.25);
+}
+
+.btn{
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid black;
+  font-size: 18px;
+  width:100px;
+  padding: 5px;
+  font-family:"Ubuntu",sans-serif;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0,0.2);
+}
+.btn:hover{
+  border:1.3px solid #ffa232;
+  cursor: pointer;
+}
+
+.ToFPassword{
+  margin-top: 30px;
+}
+.ToFPassword:hover{
+  color:#CA965C;
+  cursor: pointer;
+}
+
+.endCredsList{
+  list-style:none;
+  display: flex;
+  justify-content:space-around;
+  font-family: "Ubuntu",sans-serif;
+  text-decoration: underline;
+  padding: 0px;
+}
+.endCredsList > li:hover{
+  cursor: pointer;
+  color:#CA965C;
+  text-decoration: underline #CA965C;
+}
+
+.errorBox{
+  width:fit-content;
+  height:fit-content;
+  padding:15px;
+  background-color: #FFE5E8;
+  font-family: "Inter",sans-serif;
+  border-radius: 8px;
+  margin:0 auto;
+  animation : fadeIn 2s;
+}
+@keyframes fadeIn {
+  0%{opacity:0;}
+  100%{opacity:100;}
+}
+.errorBox > span{
+  font-size:14px;
+}
+.errorTitle{
+  display: flex;
+  margin:10px 0px 10px 0px;
+}
+
+.progressPage{
+  width:483px;
+  height: 437.4px;
+  background-color: rgba(0, 0, 0,0.4);
+  z-index: 100;
+  position: absolute;
+  border-radius: 5px;
+}
+.css-5xe99f-MuiLinearProgress-bar1{
+  background-color: #ffa232 !important;
+}
+.css-eglki6-MuiLinearProgress-root{
+  background-color: rgba(255, 162, 50,0.4)  !important;
+}
+
+.codeInput{
+  margin-left: 30px;
+  outline:none  !important;
+  border: 2px solid rgba(0, 0,0,0.2);
+  border-radius:5px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0,0.2);
+  font-size:40px;
+  font-family: "Ubuntu",sans-serif;
+}
+
+.codeInput:focus{
+  border:2px solid #ffa232;
+}
+
+.verifBtn{
+  background-color:#FFFFFF;
+  border-radius: 7px;
+  padding: 20px;
+  box-shadow:0 1px 2px 0 rgba(0, 0, 0,0.26);
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top:120px;
+  
+}
