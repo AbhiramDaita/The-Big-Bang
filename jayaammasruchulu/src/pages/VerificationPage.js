@@ -4,8 +4,7 @@ import ErrorMessage from '../components/errorMessage';
 
 const VerificationPage =()=>{
   const [errorBool,setErrorBool] = useState(false);
-  const onClick = ()=>{
-    setErrorBool(true);
+  const onClick = (code)=>{
   }
   return(
         <div>

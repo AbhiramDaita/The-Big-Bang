@@ -1,31 +1,13 @@
+
+.root{
+  width:fit-content;
+}
+
 .App {
   text-align: center;
   display:flex;
   justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  font-family: "Varela Round", sans-serif;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 
 
 .LoginBox{
@@ -65,7 +47,7 @@ form > input::placeholder{
   border: 1px solid black;
   font-size: 18px;
   width:100px;
-  padding: 5px;
+  padding: 10px 5px 10px 5px;
   font-family:"Ubuntu",sans-serif;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0,0.2);
 }
@@ -104,6 +86,8 @@ form > input::placeholder{
   font-family: "Inter",sans-serif;
   border-radius: 8px;
   margin:0 auto;
+  margin-top:10px !important;
+  margin-bottom: 10px  !important;
   animation : fadeIn 2s;
 }
 @keyframes fadeIn {
@@ -148,12 +132,310 @@ form > input::placeholder{
 }
 
 .verifBtn{
-  background-color:#FFFFFF;
+  background-color:white;
   border-radius: 7px;
-  padding: 20px;
+  padding: 8px;
   box-shadow:0 1px 2px 0 rgba(0, 0, 0,0.26);
   border: 1px solid black;
   cursor: pointer;
-  margin-top:120px;
+}
+
+.HeaderBox{
+  width: 100%;
+  height:85px;
+  background-color:white;
+  box-shadow: 0 0 4px 0  rgba(0, 0, 0,0.2);
+  display: block;
+  font-family: "Ubuntu",sans-serif;
+  display: flex;
+  justify-content: space-between;
   
+}
+.NavigationMenu{
+  display:flex;
+
+}
+
+.NavigationMenu > ul{
+  list-style:none;
+  display:flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+.NavigationMenu > ul >li{
+  width: fit-content;
+  height:fit-content;
+  margin-left:30px;
+  font-size:20px;
+}
+
+.ImageDiv{
+  margin-top: 19px;
+}
+
+.FooterBox{
+  background-color: #FCCB3C;
+  width: 100%;
+  height:200px;
+  display: flex;
+  font-family: "Ubuntu",sans-serif;
+  justify-content:space-around;
+  padding-top:26px;
+}
+
+.Socials > ul{
+  display:flex;
+  list-style: none;
+  justify-content:space-between;
+  margin-left:80px;
+}
+.Socials > ul > li :hover {
+  cursor: pointer;
+}
+
+.EndCreds{
+  display:flex;
+}
+.EndCreds > ul{
+  list-style:none;
+
+}
+.EndCreds > ul >li{
+  margin-bottom: 10px;
+}
+
+.EndCreds > ul > li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+.verifBtn_two {
+  height:50px;
+  background-color: rgba(0, 0, 0,0);
+  border-radius: 7px;
+  padding: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.26);
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top:18px;
+}
+
+.verifBtn_two:hover{
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.26);
+}
+
+.ProductCardBox{
+  width:390px;
+  height:fit-content;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0,0.2);
+  border-radius: 10px;
+  margin:10px;
+  font-family:"Ubuntu",sans-serif;
+  cursor:pointer;
+}
+.addToCartBtn{
+  width:fit-content;
+  height:fit-content;
+  background-color:white;
+  padding:7px;
+  border-radius:8px;
+  font-family: "Ubuntu",sans-serif;
+  box-shadow: 0 3px 2px 0 rgba(0, 0,0,0.2);
+  margin-top:26px;
+  font-size: 16px;
+}
+
+.addToCartBtn:hover{
+  cursor: pointer;
+}
+
+.ProductPrice{
+  display: flex;
+  justify-content: space-between;
+  padding:0 20px 0 20px;
+}
+
+
+.AddressBox{
+  width:300px;
+  height:200px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0,0.2);
+  margin: 20px;
+  border-radius: 6px;
+}
+.addressAction > span{
+  font-weight:600;
+  color:#CA965C;
+}
+
+.addressAction > span:hover{
+  color:rgba(202, 150, 92,0.7);
+  cursor: pointer;
+}
+
+.AddressBox{
+  font-family: "Ubuntu",sans-serif;
+}
+
+.reviewBox{
+  width:1000px;
+  display: flex;
+}
+
+.TitleBox{
+  background-image:linear-gradient(to right,rgba(255, 162, 50,0.72),rgba(251, 188, 4,0.78));
+  height:300px;
+  width:100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  font-family: "Ubuntu Condensed",sans-serif;
+  font-size:20px;
+}
+
+.TextBox{
+  position: absolute;
+  top:225px;
+  height: fit-content;
+  width: 94%;
+  margin-left:40px;
+  background-color:white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0,0.2);
+  padding:15px;
+  line-height: 1.8;
+  font-family: "Ubuntu",sans-serif;
+  font-size:19px; 
+}
+.secondaryBtn{
+  padding:10px 30px 10px 30px;
+  background-color: #FBBC04;
+  border:0px;
+  font-family: "Ubuntu",sans-serif;
+  font-weight:bold;
+  color:white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
+  font-size: 19px;
+}
+.secondaryBtn-war{
+  background-color:#EA4335;
+}
+.secondaryBtn-war:hover{
+  box-shadow: 0 0 9px 0 rgba(234, 67, 53,0.6) !important;
+}
+.secondaryBtn:hover{
+  box-shadow: 0 0 9px 0 rgba(251, 188, 4, 0.8);
+  cursor: pointer;
+}
+
+.SuggestionCard{
+  font-family: "Ubuntu",sans-serif;
+  width:fit-content;
+  height: fit-content;
+  margin:20px;
+}
+.SuggestionCard:hover{
+  cursor: pointer;
+}
+
+.carouselBtn{
+  background-color: white;
+  border:2px solid rgba(251, 188, 4, 0.8);
+  width:28px;
+  height:78px;
+  padding-right: 24px;
+  border-radius: 8px;
+}
+.carouselBtnRev{
+  transform: rotate(180deg);
+}
+
+.carouselBtn:hover{
+  box-shadow: 0 0 9px 0 rgba(251, 188, 4, 0.5);
+}
+
+.CategoryBox{
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.26);
+  background-color:white;
+  height: fit-content;
+  width:fit-content;
+  text-align: start;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.holder{display:flex}
+
+.BottomSheetBox{
+  width:100%;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.26);
+  z-index: 10;
+  position: absolute;
+}
+.BottomSheetTitle{
+    display:flex;
+}
+
+.TeritaryButton{
+  background-color: white;
+  border: 2px solid rgba(251, 188, 4, 1);
+  width:fit-content;
+  padding: 15px;
+  font-family: "Ubuntu";
+  border-radius: 5px;
+}
+.TeritaryButtonFilled{
+  background-color:#FBBC04;
+}
+
+.ProfileMenuBox{
+  display:flex;
+  background-color: white;
+  width: 140.5px;
+  border-radius: 5px;
+  font-family: "Ubuntu",sans-serif;
+  padding:0px 30px 0 30px;
+}
+.OrderTopDet{
+  display:flex;
+}
+.OrderBox{
+  background-color: White;
+  width: fit-content;
+  padding:15px;
+  border-radius: 6px;
+  text-align: start;
+  font-family: "Ubuntu";
+  margin: 20px;
+}
+.ItemsList > ul{
+  list-style: none;
+  padding:0;
+}
+.ItemsList > ul > li{
+  margin-bottom:15px;
+}
+
+#MoreDet{
+  color:#CA965C;
+  font-weight:520;
+  width:fit-content;
+}
+#MoreDet:hover{
+  cursor:pointer;
+  color:rgba(202, 150, 92,0.7);
+}
+.ActionsList{
+  margin-top:30px;
+  margin-bottom: 0px;
+}
+.ActionsList > ul{
+  list-style: none;
+  display:flex;
+  padding:0;
+  margin:0;
+}
+.ActionsList > ul > li {
+  margin-right: 20px;
 }
