@@ -7,14 +7,12 @@ import ReviewBox from '../components/ReviewBox';
 import ProductSuggestionCard from '../components/ProductSuggestionCard';
 import RightButton from '../components/RightButton';
 import CategoryBox from '../components/CategoryBox';
-import BottomSheet from '../components/BottomSheet';
 
 export default class Home extends Component {
   render() {
     return (
       <div style={{width:"100%"}}>
         <Header />
-        <BottomSheet />
         <ProductCard />
         <AddressBox />
         <ReviewBox />

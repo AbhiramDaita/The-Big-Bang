@@ -8,6 +8,10 @@ import VerificationPage from './pages/VerificationPage';
 import PasswordResetPage from './pages/PasswordResetPage';
 import TermsPage from './pages/TermsPage';
 import PageNotFound from './pages/PageNotFound';
+import ProductPage from './pages/ProductPage';
+import ProfilePage from './pages/ProfilePage';
+import Products from './pages/Products';
+import BottomSheet from './components/BottomSheet';
 function App() {
   return (
     <div className="App">
@@ -21,6 +25,10 @@ function App() {
           <Route path="passwordReset" element={<PasswordResetPage/>} />
           <Route path="conditions" element={<TermsPage />} />
           <Route path="404" element={<PageNotFound />} />
+          <Route path="ProductPage" element={<ProductPage />} />
+          <Route path="ProfilePage" element={<ProfilePage />} />
+          <Route path="Products" element={<Products />} />
+          <Route path="BottomSheet" element={<BottomSheet />} />
         </Routes>
       </BrowserRouter>
     </div>

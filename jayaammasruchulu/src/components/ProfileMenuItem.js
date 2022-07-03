@@ -1,12 +1,17 @@
 import React from 'react';
 import ShoppingBag from '../images/ShoppingBag.svg';
-const ProfileMenu = ({title}) => {
+const ProfileMenuItem = ({title}) => {
+   
+    const onClick = ()=>{
+        
+    }
+    
     return(
-        <div className="ProfileMenuBox">
+        <div className="ProfileMenuBox" onClick={onClick()} >
             <img src={ShoppingBag} style={{marginRight:"32px"}} />
             <p>{title}</p>
         </div>
     )
 }
 
-export default ProfileMenu;
+export default ProfileMenuItem;
